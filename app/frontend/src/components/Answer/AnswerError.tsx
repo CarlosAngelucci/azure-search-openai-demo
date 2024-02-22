@@ -39,8 +39,8 @@ export const AnswerError = ({ error, onRetry }: Props) => {
             <Stack className={styles.teste} horizontal>
                 <PrimaryButton className={styles.retryButton} onClick={onRetry} text="Retry" />
                 <Stack horizontal>
-                    <IconButton iconProps={dislikeIcon} title="Emoji" ariaLabel="Emoji" checked={checked} onClick={onClickDislike} />
-                    <IconButton iconProps={likeIcon} title="Emoji" ariaLabel="Emoji" checked={checked} onClick={onClickLike} />
+                    <IconButton iconProps={dislikeIcon} title="Dislike" ariaLabel="EmojiDislike" onClick={onClickDislike} />
+                    <IconButton iconProps={likeIcon} title="Like" ariaLabel="EmojiLike" onClick={onClickLike} />
                 </Stack>
             </Stack>
         </Stack>
