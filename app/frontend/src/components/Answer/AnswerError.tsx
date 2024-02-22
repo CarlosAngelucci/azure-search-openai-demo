@@ -14,8 +14,8 @@ export const AnswerError = ({ error, onRetry }: Props) => {
     const [clickedLikeButton, setClickedLikeButton] = useState<boolean>(false);
     const [clickedDislikeButton, setClickedDislikeButton] = useState<boolean>(false);
 
-    const dislikeIcon: IIconProps = { iconName: clickedDislikeButton ? "DislikeSolidIcon" : "DislikeIcon" };
-    const likeIcon: IIconProps = { iconName: clickedLikeButton ? "LikeSolidIcon" : "LikeIcon" };
+    const dislikeIcon: IIconProps = { iconName: clickedDislikeButton ? "DislikeSolid" : "Dislike" };
+    const likeIcon: IIconProps = { iconName: clickedLikeButton ? "LikeSolid" : "Like" };
 
     function onClickDislike(): void {
         alert("Cliquei Dislike");
