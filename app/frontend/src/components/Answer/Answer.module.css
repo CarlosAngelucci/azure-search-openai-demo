@@ -8,6 +8,13 @@
     outline: transparent solid 1px;
 }
 
+.teste {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 .answerLogo {
     font-size: 28px;
 }
