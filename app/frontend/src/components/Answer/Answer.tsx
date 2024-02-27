@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { Stack, IconButton } from "@fluentui/react";
+import { Stack, IconButton } from "@fluentui/react";''
 import DOMPurify from "dompurify";
 
 import styles from "./Answer.module.css";
@@ -7,6 +7,7 @@ import styles from "./Answer.module.css";
 import { ChatAppResponse, getCitationFilePath } from "../../api";
 import { parseAnswerToHtml } from "./AnswerParser";
 import { AnswerIcon } from "./AnswerIcon";
+import { Like } from "./LikeDislikeButton";
 
 interface Props {
     answer: ChatAppResponse;
@@ -80,6 +81,12 @@ export const Answer = ({
                     </Stack>
                 </Stack.Item>
             )}
+
+            <Stack className={styles.teste} horizontal>
+                <Stack horizontal>
+                    <Like />
+                </Stack>
+            </Stack>
 
             {!!followupQuestions?.length && showFollowupQuestions && onFollowupQuestionClicked && (
                 <Stack.Item>
